@@ -1,0 +1,17 @@
+<Workspace Version="0.7.2.19034" X="129" Y="152" zoom="1" Description="mappable2argrandom" Category="Math" Name="RandomAsFunction(min,max)" ID="a4d8aa13-1276-4cb1-8be0-fda40f94ec44">
+  <Elements>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="a1033dca-a5ef-4d88-b723-039c9b40917f" nickname="Math.Random" x="415.969453114938" y="-2.26113777009903" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.Math.Random@double,double" />
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="905feedd-5495-4ef5-b057-a1f680333f0d" nickname="Output" x="625.969453114938" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="double" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="3e36114f-57ac-4355-9d81-7201fc6d75bf" nickname="Code Block" x="195" y="98" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="x;" ShouldFocus="false" />
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="c2519f93-df90-48ba-9d20-21209f5f03b7" nickname="Code Block" x="199" y="38" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="max;" ShouldFocus="false" />
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="d9cf9765-24a5-4607-b6a8-f62de2a02a2e" nickname="Code Block" x="197" y="-19" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="min;" ShouldFocus="false" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="a1033dca-a5ef-4d88-b723-039c9b40917f" start_index="0" end="905feedd-5495-4ef5-b057-a1f680333f0d" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c2519f93-df90-48ba-9d20-21209f5f03b7" start_index="0" end="a1033dca-a5ef-4d88-b723-039c9b40917f" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="d9cf9765-24a5-4607-b6a8-f62de2a02a2e" start_index="0" end="a1033dca-a5ef-4d88-b723-039c9b40917f" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

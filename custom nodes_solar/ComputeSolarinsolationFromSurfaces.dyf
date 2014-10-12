@@ -1,0 +1,94 @@
+<Workspace Version="0.7.2.28181" X="83.6871628219405" Y="156.158601060055" zoom="0.967405276959066" Description="comuteSolarInsolationFromSurfacesAndShades" Category="Analyze.Solar Insolation.SolarInsolation.Create" Name="ComputeSolarinsolationFromSurfaces" ID="3e90b3ba-4b6d-4cce-b775-553283fa60d9">
+  <Elements>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="c17e0c9b-8f7a-4bdb-917f-4ba32161fa48" nickname="FaceAnalysisDisplay.ByViewAndFaceAnalysisData" x="3768.74858674942" y="407.085798028404" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="RevitNodes.dll" function="Revit.AnalysisDisplay.FaceAnalysisDisplay.ByViewAndFaceAnalysisData@Revit.Elements.Views.View,Analysis.DataTypes.SurfaceAnalysisData[],string,string,System.Type">
+      <PortInfo index="2" default="True" />
+      <PortInfo index="3" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.StringInput type="Dynamo.Nodes.StringInput" guid="b26d40ed-0285-48b7-b210-7c79ca150e5d" nickname="String" x="3457.54244055801" y="488.234162640656" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.String value="Some seriously cool calculations from Dynamo." />
+    </Dynamo.Nodes.StringInput>
+    <Dynamo.Nodes.StringInput type="Dynamo.Nodes.StringInput" guid="107db169-75ea-469d-a29c-ce1cc4091771" nickname="String" x="3453.20513403963" y="411.416212137926" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.String value="Solar Insolation Ninjitsu" />
+    </Dynamo.Nodes.StringInput>
+    <UnitsUI.UnitTypes type="UnitsUI.UnitTypes" guid="3e67966e-8cd3-4d1b-8d35-765d31c0e1f7" nickname="Unit Types" x="3443.68959731118" y="671.816713186622" isVisible="true" isUpstreamVisible="true" lacing="Disabled" index="1:Insolation" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="649e3c0a-3791-4ba6-8816-cf7dccacbda4" nickname="Document.ActiveView" x="3238.52888856548" y="288.690073815494" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="RevitNodes.dll" function="Revit.Application.Document.ActiveView" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="f1572b88-612a-499e-b0a4-b59703794416" nickname="SurfaceAnalysisData.Results" x="3621.72175365648" y="148.734753716939" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="Analysis.dll" function="Analysis.DataTypes.SurfaceAnalysisData.Results" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="3d5b558e-0913-4bba-a024-344d37ad9907" nickname="SolarInsolation.Results" x="2422.30199698656" y="440.372216014307" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="..\packages\Dynamo%20Solar%20Insolation\bin\DynamoSolarInsolation.dll" function="DynamoSolarInsolation.Wrappers.SolarInsolation.Results" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="03452ba9-584e-4278-a5a9-f1eef78fd09b" nickname="SolarInsolation.Analyze" x="2088.06354043292" y="329.140100521314" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="..\packages\Dynamo%20Solar%20Insolation\bin\DynamoSolarInsolation.dll" function="DynamoSolarInsolation.Wrappers.SolarInsolation.Analyze@DynamoSolarInsolation.Wrappers.Weather,Analysis.DataTypes.SurfaceAnalysisData[],Autodesk.DesignScript.Geometry.Surface[],Revit.Elements.SunSettings" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="ec244c52-746c-4c42-8194-b2f9b4c9a095" nickname="SurfaceAnalysisData.SurfaceAnalysisData" x="1611.85827255896" y="326.764062837388" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="Analysis.dll" function="Analysis.DataTypes.SurfaceAnalysisData.SurfaceAnalysisData@Autodesk.DesignScript.Geometry.Surface,Autodesk.DesignScript.Geometry.UV[]" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="2b835dee-b3c2-4805-ba44-1dd80dbf86b9" nickname="Flatten" x="1777.61317324037" y="510.145922572223" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="" function="Flatten@var[]..[]" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="ddecf9d1-8887-499d-8fa9-38fca8525147" nickname="Weather.FromFile" x="1729.5088626439" y="189.132649166802" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="..\packages\Dynamo%20Solar%20Insolation\bin\DynamoSolarInsolation.dll" function="DynamoSolarInsolation.Wrappers.Weather.FromFile@string" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="cfe80b61-25f3-4dc0-8858-1926ed8e3ba1" nickname="List.OfRepeatedItem" x="1468.82889812923" y="566.035570209692" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.OfRepeatedItem@var[]..[],int" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="a029914d-0244-4279-8764-7acd10206012" nickname="Flatten" x="1162.85198352264" y="698.244508402017" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="" function="Flatten@var[]..[]" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="5b54a341-6556-45db-8ff6-ba55e3ee6c0f" nickname="UV.ByCoordinates" x="988.791172380886" y="530.31746648416" isVisible="true" isUpstreamVisible="true" lacing="CrossProduct" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.UV.ByCoordinates@double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="f4e1fad9-ff43-44b3-bbf7-a1690f8c05c2" nickname="List.Count" x="915.554133415851" y="403.65882444569" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.Count@var[]..[]" />
+    <DSCoreNodesUI.NumberRange type="DSCoreNodesUI.NumberRange" guid="1621e61f-c79e-46a9-9ce3-11653e2a66bc" nickname="Number Range" x="773.918820749824" y="537.818131300501" isVisible="true" isUpstreamVisible="true" lacing="Longest" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="c393990c-ea80-44f9-b2fe-3833b833355b" nickname="Flatten" x="356.052698380764" y="256.945141329132" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="" function="Flatten@var[]..[]" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="682580a6-b2b1-439a-8c8f-803aeb77d021" nickname="Document.Current" x="-6.97058418098223" y="-71.4673971855614" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="RevitNodes.dll" function="Revit.Application.Document.Current" />
+    <DSRevitNodesUI.SunSettings type="DSRevitNodesUI.SunSettings" guid="c84fa7eb-cc1a-4a99-9755-f453913a9456" nickname="SunSettings.Current" x="269.220092884049" y="422.761733948549" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.DoubleInput type="Dynamo.Nodes.DoubleInput" guid="1f97db8a-51b8-4219-867c-a2cde303e5c1" nickname="Number" x="255.076538832743" y="595.265318344536" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double value="0" />
+    </Dynamo.Nodes.DoubleInput>
+    <Dynamo.Nodes.DoubleInput type="Dynamo.Nodes.DoubleInput" guid="741fcdba-5451-4214-b533-a70add8e6f83" nickname="Number" x="258.872493866351" y="784.469363310928" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double value="1" />
+    </Dynamo.Nodes.DoubleInput>
+    <Dynamo.Nodes.DoubleInput type="Dynamo.Nodes.DoubleInput" guid="a5d62e17-d925-4c47-ad09-0fb8c17e07b6" nickname="Number" x="250" y="848.001665058116" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double value="0.1" />
+    </Dynamo.Nodes.DoubleInput>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="342e43b6-42cd-4939-ad98-cff33d8bd837" nickname="Input" x="0" y="77.1311213361894" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="shading surfaces" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="68286bdd-5425-44cb-bdad-938f6f4ec0f3" nickname="Input" x="0" y="150" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="weather file path" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="4a625511-a8de-4cdd-a19b-bfd14aeec1a9" nickname="Input" x="0" y="300" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="surfaces to analyze" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="ff5a5b3d-f3b6-4136-8a94-f813245012be" nickname="Input" x="21.5701017232409" y="-216.929402477718" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="iteration" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="1bbbbdd3-8513-40d5-b013-ab1d5542aec6" nickname="Output" x="4287.95499584785" y="226.571076721543" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="data,iteration" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="44268eda-4d9b-4a97-8813-72b02b77f5c3" nickname="Transaction.End" x="4155.87340785481" y="442.754701858535" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="RevitNodes.dll" function="Revit.Transaction.Transaction.End@var" />
+    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="1cf83bd5-c1ce-4cfc-8f44-ac09a57675fc" nickname="List.Create" x="4088.62541025677" y="288.576365902046" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="22b87a3f-ce84-4164-aa90-2fcab88c02e7" nickname="Element.Faces" x="205.262793383083" y="-32.9739040252427" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="RevitNodes.dll" function="Revit.Elements.Element.Faces" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="c17e0c9b-8f7a-4bdb-917f-4ba32161fa48" start_index="0" end="44268eda-4d9b-4a97-8813-72b02b77f5c3" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="b26d40ed-0285-48b7-b210-7c79ca150e5d" start_index="0" end="c17e0c9b-8f7a-4bdb-917f-4ba32161fa48" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="107db169-75ea-469d-a29c-ce1cc4091771" start_index="0" end="c17e0c9b-8f7a-4bdb-917f-4ba32161fa48" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3e67966e-8cd3-4d1b-8d35-765d31c0e1f7" start_index="0" end="c17e0c9b-8f7a-4bdb-917f-4ba32161fa48" end_index="4" portType="0" />
+    <Dynamo.Models.ConnectorModel start="649e3c0a-3791-4ba6-8816-cf7dccacbda4" start_index="0" end="c17e0c9b-8f7a-4bdb-917f-4ba32161fa48" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f1572b88-612a-499e-b0a4-b59703794416" start_index="0" end="1cf83bd5-c1ce-4cfc-8f44-ac09a57675fc" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3d5b558e-0913-4bba-a024-344d37ad9907" start_index="0" end="c17e0c9b-8f7a-4bdb-917f-4ba32161fa48" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3d5b558e-0913-4bba-a024-344d37ad9907" start_index="0" end="f1572b88-612a-499e-b0a4-b59703794416" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="03452ba9-584e-4278-a5a9-f1eef78fd09b" start_index="0" end="3d5b558e-0913-4bba-a024-344d37ad9907" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ec244c52-746c-4c42-8194-b2f9b4c9a095" start_index="0" end="03452ba9-584e-4278-a5a9-f1eef78fd09b" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="2b835dee-b3c2-4805-ba44-1dd80dbf86b9" start_index="0" end="03452ba9-584e-4278-a5a9-f1eef78fd09b" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ddecf9d1-8887-499d-8fa9-38fca8525147" start_index="0" end="03452ba9-584e-4278-a5a9-f1eef78fd09b" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="cfe80b61-25f3-4dc0-8858-1926ed8e3ba1" start_index="0" end="ec244c52-746c-4c42-8194-b2f9b4c9a095" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a029914d-0244-4279-8764-7acd10206012" start_index="0" end="cfe80b61-25f3-4dc0-8858-1926ed8e3ba1" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="5b54a341-6556-45db-8ff6-ba55e3ee6c0f" start_index="0" end="a029914d-0244-4279-8764-7acd10206012" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f4e1fad9-ff43-44b3-bbf7-a1690f8c05c2" start_index="0" end="cfe80b61-25f3-4dc0-8858-1926ed8e3ba1" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="1621e61f-c79e-46a9-9ce3-11653e2a66bc" start_index="0" end="5b54a341-6556-45db-8ff6-ba55e3ee6c0f" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="1621e61f-c79e-46a9-9ce3-11653e2a66bc" start_index="0" end="5b54a341-6556-45db-8ff6-ba55e3ee6c0f" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c393990c-ea80-44f9-b2fe-3833b833355b" start_index="0" end="f4e1fad9-ff43-44b3-bbf7-a1690f8c05c2" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c393990c-ea80-44f9-b2fe-3833b833355b" start_index="0" end="ec244c52-746c-4c42-8194-b2f9b4c9a095" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="682580a6-b2b1-439a-8c8f-803aeb77d021" start_index="0" end="649e3c0a-3791-4ba6-8816-cf7dccacbda4" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c84fa7eb-cc1a-4a99-9755-f453913a9456" start_index="0" end="03452ba9-584e-4278-a5a9-f1eef78fd09b" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="1f97db8a-51b8-4219-867c-a2cde303e5c1" start_index="0" end="1621e61f-c79e-46a9-9ce3-11653e2a66bc" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="741fcdba-5451-4214-b533-a70add8e6f83" start_index="0" end="1621e61f-c79e-46a9-9ce3-11653e2a66bc" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a5d62e17-d925-4c47-ad09-0fb8c17e07b6" start_index="0" end="1621e61f-c79e-46a9-9ce3-11653e2a66bc" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="342e43b6-42cd-4939-ad98-cff33d8bd837" start_index="0" end="2b835dee-b3c2-4805-ba44-1dd80dbf86b9" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="68286bdd-5425-44cb-bdad-938f6f4ec0f3" start_index="0" end="ddecf9d1-8887-499d-8fa9-38fca8525147" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4a625511-a8de-4cdd-a19b-bfd14aeec1a9" start_index="0" end="22b87a3f-ce84-4164-aa90-2fcab88c02e7" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ff5a5b3d-f3b6-4136-8a94-f813245012be" start_index="0" end="1cf83bd5-c1ce-4cfc-8f44-ac09a57675fc" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="1cf83bd5-c1ce-4cfc-8f44-ac09a57675fc" start_index="0" end="1bbbbdd3-8513-40d5-b013-ab1d5542aec6" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="22b87a3f-ce84-4164-aa90-2fcab88c02e7" start_index="0" end="c393990c-ea80-44f9-b2fe-3833b833355b" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

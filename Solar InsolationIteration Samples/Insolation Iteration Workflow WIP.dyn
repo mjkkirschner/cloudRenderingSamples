@@ -1,0 +1,97 @@
+<Workspace Version="0.7.2.28181" X="-271.006414753779" Y="-52.2130428880868" zoom="0.755349913334022" Description="" Category="" Name="Home">
+  <Elements>
+    <DSRevitNodesUI.FamilyTypes type="DSRevitNodesUI.FamilyTypes" guid="eb340086-d1c8-429a-bc49-a1822104dbc7" nickname="Family Types" x="-1530.84685143138" y="605.777674683481" isVisible="true" isUpstreamVisible="true" lacing="Disabled" index="7:BuildingMass_Loaded_5:SouthEast Plaza" />
+    <DSCore.CartesianProduct type="DSCore.CartesianProduct" guid="c595773d-4510-4c8b-b99e-ab11d0026d7e" nickname="List.CartesianProduct" x="-402.612797793051" y="673.59790173873" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="3" />
+    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="cd9ab58e-0450-46fd-8c97-c561ac1150b2" nickname="Create List" x="-535.325298292392" y="518.471163879967" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
+    <Dynamo.Nodes.StringInput type="Dynamo.Nodes.StringInput" guid="4d8ef7e8-c9ee-4850-9087-d29923d53e48" nickname="String" x="-1388.81244526662" y="972.394315054255" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.String value="increment" />
+    </Dynamo.Nodes.StringInput>
+    <DSIronPythonNode.PythonNode type="DSIronPythonNode.PythonNode" guid="b57b06f2-d538-486f-9e9f-b8711719ce51" nickname="Python Script" x="19.013134952613" y="561.921659940574" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="1">
+      <Script>
+#The input to this node will be stored in the IN[0] variable.
+listoflists= IN[0]
+
+for i in range(len(listoflists)):
+	list = listoflists[i]
+	list.append(i)
+#Assign your output to the OUT variable
+OUT = listoflists</Script>
+    </DSIronPythonNode.PythonNode>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="1e1f0dae-c002-4db9-aa8c-dbff31ee90b0" nickname="List.Count" x="-0.164949486853033" y="677.403776355848" isVisible="true" isUpstreamVisible="true" lacing="Disabled" assembly="DSCoreNodes.dll" function="DSCore.List.Count@var[]..[]" />
+    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="bdf6fe77-0091-405f-a7a5-163662b54d22" nickname="Create List" x="-1264.6590101725" y="965.071577406078" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="1" />
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="85b0913b-eed3-4489-acc7-7b8bb6479e31" nickname="Watch" x="-672.937555605975" y="1032.59841962749" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="7860e715-d44b-46a0-87fe-77beacd7713a" nickname="Watch" x="-10.3601171529192" y="774.552833511281" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="afec7d08-12d5-4f5f-8b4a-7285a0adb79d" nickname="List.Flatten" x="-142.005528320248" y="519.868888497493" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.Flatten@var[]..[],int" />
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="c53cda34-4c00-4972-81dd-a36675981f05" nickname="Watch" x="185.712146155472" y="575.926406549955" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <DSCore.CartesianProduct type="DSCore.CartesianProduct" guid="ebdee84a-edd4-4d3a-b1ce-8117edace457" nickname="List.CartesianProduct" x="-906.82755658532" y="1012.20031764888" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="3" />
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="b542c708-9ea1-49fc-8dea-d75f3fdfd81b" nickname="Code Block" x="-1398.12239740669" y="1067.88208903296" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="40..90..40;" ShouldFocus="false" />
+    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="b1893ce5-3bb2-4cd1-a9bb-5a3070a92c7a" nickname="Create List" x="-1165.64969085763" y="803.769312719336" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
+    <DSRevitNodesUI.ElementsOfFamilyType type="DSRevitNodesUI.ElementsOfFamilyType" guid="13072778-7f1e-4092-9eb5-0e7aa3354bbc" nickname="All Elements of Family Type" x="-1306.01374644254" y="697.547549478564" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="0519a155-693d-4f71-aa36-a8e220aae326" nickname="Code Block" x="-938.337926665561" y="851.665399132485" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="1;" ShouldFocus="false" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="b9b73551-bd7b-47a6-99e4-c006b8202008" nickname="List.Flatten" x="-758.451004145535" y="856.645418515016" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.Flatten@var[]..[],int" />
+    <DSCore.Map type="DSCore.Map" guid="3c37bf1a-9fc1-446d-9423-d7bffc955081" nickname="List.Map" x="772.789417086099" y="176.548127135186" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <DSCoreNodesUI.HigherOrder.ComposeFunctions type="DSCoreNodesUI.HigherOrder.ComposeFunctions" guid="c37f3c87-b370-4ff1-8863-e1f96866f591" nickname="Function.Compose" x="539.875954276477" y="0.479088771770705" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="c483371a-223a-4c64-8757-81fa3c83e8a0" nickname="ComputeSolarinsolationFromSurfaces" x="236.158523308479" y="49.2655765109008" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="3e90b3ba-4b6d-4cce-b775-553283fa60d9" />
+      <Name value="ComputeSolarinsolationFromSurfaces" />
+      <Description value="comuteSolarInsolationFromSurfacesAndShades" />
+      <Inputs>
+        <Input value="shading surfaces" />
+        <Input value="weather file path" />
+        <Input value="surfaces to analyze" />
+        <Input value="iteration" />
+      </Inputs>
+      <Outputs>
+        <Output value="data,iteration" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.DSModelElementSelection type="Dynamo.Nodes.DSModelElementSelection" guid="044c74fe-a69c-49c7-b6b3-832b6b3d39d2" nickname="Select Model Element" x="-242.853214103428" y="151.37591817596" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <instance id="6333c70f-4d5d-437c-a3c3-9537586ecdbc-0000d1e7" />
+    </Dynamo.Nodes.DSModelElementSelection>
+    <Dynamo.Nodes.DSModelElementSelection type="Dynamo.Nodes.DSModelElementSelection" guid="9939abb9-125b-41d9-9178-da4c2408a86f" nickname="Select Model Element" x="-154.853253012575" y="-61.6245002387102" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <instance id="5696343d-d9f6-4936-84e9-f2a7dd4467d2-0001063a" />
+    </Dynamo.Nodes.DSModelElementSelection>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="4b44ca3e-f32c-4a22-b86f-583102b9f931" nickname="Element.Faces" x="41.3778565617252" y="-63.9094437799943" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="RevitNodes.dll" function="Revit.Elements.Element.Faces" />
+    <DSCore.File.Filename type="DSCore.File.Filename" guid="88e836d5-1b60-40d6-98a2-8b54960c9b92" nickname="File Path" x="-400.191281265721" y="34.1581546272441" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.String>C:\Users\Mike\Desktop\Dynamo-Solar-Radiation\WeatherData\USA-NewYorkNewYork.wea</System.String>
+    </DSCore.File.Filename>
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="44deb536-9965-4052-9680-105d2098cd2a" nickname="SolarUpdateParameter(s)" x="278.22894442778" y="-85.6105509490689" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="63f335ce-d910-491d-8534-09608f9e1856" />
+      <Name value="SolarUpdateParameter(s)" />
+      <Description value="[familyinstance, [parameter1,val][parameter2,val] iteration number]" />
+      <Inputs>
+        <Input value="seq" />
+      </Inputs>
+      <Outputs>
+        <Output value="iteration num" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="eb340086-d1c8-429a-bc49-a1822104dbc7" start_index="0" end="13072778-7f1e-4092-9eb5-0e7aa3354bbc" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c595773d-4510-4c8b-b99e-ab11d0026d7e" start_index="0" end="afec7d08-12d5-4f5f-8b4a-7285a0adb79d" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="cd9ab58e-0450-46fd-8c97-c561ac1150b2" start_index="0" end="c595773d-4510-4c8b-b99e-ab11d0026d7e" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4d8ef7e8-c9ee-4850-9087-d29923d53e48" start_index="0" end="bdf6fe77-0091-405f-a7a5-163662b54d22" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="b57b06f2-d538-486f-9e9f-b8711719ce51" start_index="0" end="c53cda34-4c00-4972-81dd-a36675981f05" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="1e1f0dae-c002-4db9-aa8c-dbff31ee90b0" start_index="0" end="7860e715-d44b-46a0-87fe-77beacd7713a" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="bdf6fe77-0091-405f-a7a5-163662b54d22" start_index="0" end="ebdee84a-edd4-4d3a-b1ce-8117edace457" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="afec7d08-12d5-4f5f-8b4a-7285a0adb79d" start_index="0" end="1e1f0dae-c002-4db9-aa8c-dbff31ee90b0" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="afec7d08-12d5-4f5f-8b4a-7285a0adb79d" start_index="0" end="b57b06f2-d538-486f-9e9f-b8711719ce51" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c53cda34-4c00-4972-81dd-a36675981f05" start_index="0" end="3c37bf1a-9fc1-446d-9423-d7bffc955081" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ebdee84a-edd4-4d3a-b1ce-8117edace457" start_index="0" end="85b0913b-eed3-4489-acc7-7b8bb6479e31" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ebdee84a-edd4-4d3a-b1ce-8117edace457" start_index="0" end="c595773d-4510-4c8b-b99e-ab11d0026d7e" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="b542c708-9ea1-49fc-8dea-d75f3fdfd81b" start_index="0" end="ebdee84a-edd4-4d3a-b1ce-8117edace457" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="b1893ce5-3bb2-4cd1-a9bb-5a3070a92c7a" start_index="0" end="ebdee84a-edd4-4d3a-b1ce-8117edace457" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="13072778-7f1e-4092-9eb5-0e7aa3354bbc" start_index="0" end="c595773d-4510-4c8b-b99e-ab11d0026d7e" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="0519a155-693d-4f71-aa36-a8e220aae326" start_index="0" end="afec7d08-12d5-4f5f-8b4a-7285a0adb79d" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="0519a155-693d-4f71-aa36-a8e220aae326" start_index="0" end="b9b73551-bd7b-47a6-99e4-c006b8202008" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c37f3c87-b370-4ff1-8863-e1f96866f591" start_index="0" end="3c37bf1a-9fc1-446d-9423-d7bffc955081" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c483371a-223a-4c64-8757-81fa3c83e8a0" start_index="0" end="c37f3c87-b370-4ff1-8863-e1f96866f591" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="044c74fe-a69c-49c7-b6b3-832b6b3d39d2" start_index="0" end="c483371a-223a-4c64-8757-81fa3c83e8a0" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="9939abb9-125b-41d9-9178-da4c2408a86f" start_index="0" end="4b44ca3e-f32c-4a22-b86f-583102b9f931" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4b44ca3e-f32c-4a22-b86f-583102b9f931" start_index="0" end="c483371a-223a-4c64-8757-81fa3c83e8a0" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="88e836d5-1b60-40d6-98a2-8b54960c9b92" start_index="0" end="c483371a-223a-4c64-8757-81fa3c83e8a0" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="44deb536-9965-4052-9680-105d2098cd2a" start_index="0" end="c37f3c87-b370-4ff1-8863-e1f96866f591" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

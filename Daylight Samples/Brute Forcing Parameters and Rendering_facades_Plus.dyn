@@ -1,4 +1,4 @@
-<Workspace Version="0.7.2.15588" X="-21.9954436288706" Y="25.2968429797597" zoom="0.518839400170568" Description="" Category="" Name="Home">
+<Workspace Version="0.7.2.32551" X="117.476944640911" Y="414.894626692938" zoom="0.874583295981682" Description="" Category="" Name="Home">
   <Elements>
     <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="4cdc3603-e657-4379-8611-8ab93cb2153b" nickname="RenderWithWeatherData_Return List of data" x="461.751788245328" y="-232.028329297138" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
       <ID value="4dac969f-c00e-4d1b-b65c-00bb7d4e80b1" />
@@ -16,18 +16,18 @@
         <Output value="Render Data" />
       </Outputs>
     </Dynamo.Nodes.Function>
-    <Dynamo.Nodes.DoubleInput type="Dynamo.Nodes.DoubleInput" guid="f53cf8e0-acb8-40c8-86b5-b16f5b733cd1" nickname="Number" x="-984.447562432872" y="536.173741794217" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+    <Dynamo.Nodes.DoubleInput type="Dynamo.Nodes.DoubleInput" guid="f53cf8e0-acb8-40c8-86b5-b16f5b733cd1" nickname="Number" x="-1445.05952420513" y="642.225668391822" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
       <System.Double value="0.4" />
     </Dynamo.Nodes.DoubleInput>
-    <DSRevitNodesUI.FamilyTypes type="DSRevitNodesUI.FamilyTypes" guid="eb340086-d1c8-429a-bc49-a1822104dbc7" nickname="Family Types" x="-1105.7623556373" y="378.852868658072" isVisible="true" isUpstreamVisible="true" lacing="Disabled" index="7:curtain panel AC with spandrel:curtain panel AC with spandrel" />
-    <DSCore.CartesianProduct type="DSCore.CartesianProduct" guid="c595773d-4510-4c8b-b99e-ab11d0026d7e" nickname="List.CartesianProduct" x="-335.107086277241" y="563.134010167405" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="3" />
-    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="cd9ab58e-0450-46fd-8c97-c561ac1150b2" nickname="Create List" x="-467.819586776582" y="408.007272308642" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
-    <Dynamo.Nodes.StringInput type="Dynamo.Nodes.StringInput" guid="4d8ef7e8-c9ee-4850-9087-d29923d53e48" nickname="String" x="-986.272720734725" y="623.402786290223" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+    <DSRevitNodesUI.FamilyTypes type="DSRevitNodesUI.FamilyTypes" guid="eb340086-d1c8-429a-bc49-a1822104dbc7" nickname="Family Types" x="-1551.42151232711" y="385.219428039355" isVisible="true" isUpstreamVisible="true" lacing="Disabled" index="7:curtain panel AC with spandrel:curtain panel AC with spandrel" />
+    <DSCore.CartesianProduct type="DSCore.CartesianProduct" guid="c595773d-4510-4c8b-b99e-ab11d0026d7e" nickname="List.CartesianProduct" x="-780.76624296705" y="569.500569548688" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="3" />
+    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="cd9ab58e-0450-46fd-8c97-c561ac1150b2" nickname="Create List" x="-913.478743466391" y="414.373831689925" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
+    <Dynamo.Nodes.StringInput type="Dynamo.Nodes.StringInput" guid="4d8ef7e8-c9ee-4850-9087-d29923d53e48" nickname="String" x="-1466.82175595025" y="717.824753379257" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
       <System.String value="spandrel_dist" />
     </Dynamo.Nodes.StringInput>
-    <DSCore.CartesianProduct type="DSCore.CartesianProduct" guid="f1291e0b-e582-45eb-8b7d-1a7f3357718d" nickname="List.CartesianProduct" x="-849.911449016517" y="815.556295670363" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="3" />
-    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="170a01a2-d89c-4b71-9dbe-5d50985822f7" nickname="Create List" x="-1031.95665226047" y="816.784203448071" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
-    <DSIronPythonNode.PythonNode type="DSIronPythonNode.PythonNode" guid="b57b06f2-d538-486f-9e9f-b8711719ce51" nickname="Python Script" x="15.1649190909323" y="425.039264909456" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="1">
+    <DSCore.CartesianProduct type="DSCore.CartesianProduct" guid="f1291e0b-e582-45eb-8b7d-1a7f3357718d" nickname="List.CartesianProduct" x="-1295.57060570633" y="821.922855051646" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="3" />
+    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="170a01a2-d89c-4b71-9dbe-5d50985822f7" nickname="Create List" x="-1608.86820911844" y="816.505071681599" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
+    <DSIronPythonNode.PythonNode type="DSIronPythonNode.PythonNode" guid="b57b06f2-d538-486f-9e9f-b8711719ce51" nickname="Python Script" x="-430.494237598877" y="431.405824290739" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="1">
       <Script>
 #The input to this node will be stored in the IN[0] variable.
 listoflists= IN[0]
@@ -38,15 +38,15 @@ for i in range(len(listoflists)):
 #Assign your output to the OUT variable
 OUT = listoflists</Script>
     </DSIronPythonNode.PythonNode>
-    <Dynamo.Nodes.StringInput type="Dynamo.Nodes.StringInput" guid="e3b787ea-d435-41e5-8fbc-30c2cfb994fb" nickname="String" x="-1234.57502261285" y="1250.06603139893" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+    <Dynamo.Nodes.StringInput type="Dynamo.Nodes.StringInput" guid="e3b787ea-d435-41e5-8fbc-30c2cfb994fb" nickname="String" x="-1502.46194110022" y="1342.82657570102" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
       <System.String value="fin_size_multiplier" />
     </Dynamo.Nodes.StringInput>
-    <Dynamo.Nodes.DoubleInput type="Dynamo.Nodes.DoubleInput" guid="b3396423-1e23-41af-aaae-f76c87f7b5c3" nickname="Number" x="-1228.23695708311" y="1155.9495509007" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+    <Dynamo.Nodes.DoubleInput type="Dynamo.Nodes.DoubleInput" guid="b3396423-1e23-41af-aaae-f76c87f7b5c3" nickname="Number" x="-1496.12387557048" y="1248.71009520279" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
       <System.Double value="1..8..3" />
     </Dynamo.Nodes.DoubleInput>
-    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="303b3a6a-d00a-4501-9984-cf2db5b069dd" nickname="Create List" x="-1235.57055885277" y="1376.77318467705" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
-    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="1e1f0dae-c002-4db9-aa8c-dbff31ee90b0" nickname="List.Count" x="-0.164949486853033" y="677.403776355848" isVisible="true" isUpstreamVisible="true" lacing="Disabled" assembly="DSCoreNodes.dll" function="DSCore.List.Count@var[]..[]" />
-    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="b3d4155e-a468-487b-9f16-9fe3a839bb8c" nickname="Create List" x="-661.485948615812" y="1039.20690172801" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
+    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="303b3a6a-d00a-4501-9984-cf2db5b069dd" nickname="Create List" x="-1503.45747734014" y="1469.53372897915" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="1e1f0dae-c002-4db9-aa8c-dbff31ee90b0" nickname="List.Count" x="-445.824106176662" y="683.770335737131" isVisible="true" isUpstreamVisible="true" lacing="Disabled" assembly="DSCoreNodes.dll" function="DSCore.List.Count@var[]..[]" />
+    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="b3d4155e-a468-487b-9f16-9fe3a839bb8c" nickname="Create List" x="-1107.14510530562" y="1045.57346110929" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
     <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="7f05e170-ff28-40ea-b3f7-33477d1ecffb" nickname="UpdateParameter(s)" x="566.64570803831" y="-415.498899598704" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
       <ID value="8cd6ead4-fd74-4139-b901-24914cfba5e3" />
       <Name value="UpdateParameter(s)" />
@@ -58,14 +58,14 @@ OUT = listoflists</Script>
         <Output value="" />
       </Outputs>
     </Dynamo.Nodes.Function>
-    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="bdf6fe77-0091-405f-a7a5-163662b54d22" nickname="Create List" x="-876.448631973182" y="701.627939710376" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="1" />
-    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="21656a6e-5a81-4bd9-ae08-569e71fd6d54" nickname="Create List" x="-1036.91188636425" y="1249.07570435378" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="1" />
-    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="04bcbac2-33e5-4a49-b090-e77754e6f2b9" nickname="Watch" x="-995.522977532819" y="1096.52599361543" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
-    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="ddb6bad9-79f9-4b5d-85a7-f84649320a83" nickname="Watch" x="-785.55430087246" y="488.626365037578" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
-    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="917f94ca-0827-4652-a695-7a417a4ca1a6" nickname="Create List" x="-591.409463468094" y="521.886353848876" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="1" />
-    <DSCore.CartesianProduct type="DSCore.CartesianProduct" guid="ebdee84a-edd4-4d3a-b1ce-8117edace457" nickname="List.CartesianProduct" x="-472.705159178626" y="1036.31822861592" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="3" />
-    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="85b0913b-eed3-4489-acc7-7b8bb6479e31" nickname="Watch" x="-220.132070277189" y="1033.29786707186" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
-    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="7860e715-d44b-46a0-87fe-77beacd7713a" nickname="Watch" x="-10.3601171529192" y="774.552833511281" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="bdf6fe77-0091-405f-a7a5-163662b54d22" nickname="Create List" x="-1278.91079620259" y="712.978767452475" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="1" />
+    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="21656a6e-5a81-4bd9-ae08-569e71fd6d54" nickname="Create List" x="-1304.79880485162" y="1341.83624865588" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="1" />
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="04bcbac2-33e5-4a49-b090-e77754e6f2b9" nickname="Watch" x="-1263.40989602019" y="1189.28653791753" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="ddb6bad9-79f9-4b5d-85a7-f84649320a83" nickname="Watch" x="-1286.04040953125" y="538.189916879267" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="917f94ca-0827-4652-a695-7a417a4ca1a6" nickname="Create List" x="-1037.0686201579" y="528.252913230159" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="1" />
+    <DSCore.CartesianProduct type="DSCore.CartesianProduct" guid="ebdee84a-edd4-4d3a-b1ce-8117edace457" nickname="List.CartesianProduct" x="-918.364315868435" y="1042.6847879972" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="3" />
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="85b0913b-eed3-4489-acc7-7b8bb6479e31" nickname="Watch" x="-474.727606469049" y="1056.27865432253" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="7860e715-d44b-46a0-87fe-77beacd7713a" nickname="Watch" x="-309.814068592123" y="780.919392892564" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
     <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="e81e7ed2-a599-4128-b866-0a6c8800c61f" nickname="Point.ByCoordinates" x="-250.596228498911" y="-346.345115775651" isVisible="true" isUpstreamVisible="true" lacing="Longest" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
       <PortInfo index="0" default="True" />
       <PortInfo index="1" default="True" />
@@ -102,14 +102,14 @@ OUT = listoflists</Script>
     <Dynamo.Nodes.DoubleInput type="Dynamo.Nodes.DoubleInput" guid="573b5b1b-7cdf-439a-b415-37f740bd98c7" nickname="Number" x="-411.783480953805" y="-52.95063671081" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
       <System.Double value="246" />
     </Dynamo.Nodes.DoubleInput>
-    <DSCore.CartesianProduct type="DSCore.CartesianProduct" guid="5e333264-8100-4056-88db-73c631ec3d4a" nickname="List.CartesianProduct" x="-1008.65658013711" y="1372.82595717378" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="3" />
-    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="78e274f0-725f-40a9-8e0d-ec0ef253fe56" nickname="List.Flatten" x="-680.938682847629" y="1277.42249571595" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.Flatten@var[]..[],int" />
-    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="21907f76-ffb6-4f4d-be59-898c5c0fe671" nickname="Code Block" x="-816" y="1420" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="1;" ShouldFocus="false" />
-    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="ff0cedf1-055d-4844-947e-c108f3625642" nickname="List.Flatten" x="-630.709591855995" y="897.643353689097" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.Flatten@var[]..[],int" />
-    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="afec7d08-12d5-4f5f-8b4a-7285a0adb79d" nickname="List.Flatten" x="-302.427119442239" y="723.480907998482" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.Flatten@var[]..[],int" />
-    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="b9b73551-bd7b-47a6-99e4-c006b8202008" nickname="List.Flatten" x="-266.693721600119" y="890.345819107142" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.Flatten@var[]..[],int" />
+    <DSCore.CartesianProduct type="DSCore.CartesianProduct" guid="5e333264-8100-4056-88db-73c631ec3d4a" nickname="List.CartesianProduct" x="-1276.54349862448" y="1465.58650147587" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="3" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="78e274f0-725f-40a9-8e0d-ec0ef253fe56" nickname="List.Flatten" x="-844.155965757861" y="1324.683811795" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.Flatten@var[]..[],int" />
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="21907f76-ffb6-4f4d-be59-898c5c0fe671" nickname="Code Block" x="-984.201551271048" y="1496.14631643271" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="1;" ShouldFocus="false" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="ff0cedf1-055d-4844-947e-c108f3625642" nickname="List.Flatten" x="-1076.3687485458" y="904.00991307038" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.Flatten@var[]..[],int" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="afec7d08-12d5-4f5f-8b4a-7285a0adb79d" nickname="List.Flatten" x="-576.959729077363" y="576.996570981405" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.Flatten@var[]..[],int" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="b9b73551-bd7b-47a6-99e4-c006b8202008" nickname="List.Flatten" x="-652.541657960135" y="1097.74453570801" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.Flatten@var[]..[],int" />
     <DSCore.File.Filename type="DSCore.File.Filename" guid="8d694494-5720-407c-83e4-c5610b71352c" nickname="File Path" x="-23.2900465891495" y="-261.361688853437" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
-      <System.String>\\psf\Dropbox\Autodesk Fall 2014\Facades + October\Dynamo-63FacadesPlus\doc\distrib\Samples\25 Rendering\GBS_04R20_266135.csv</System.String>
+      <System.String>Y:\cloudRenderingSamples\Daylight Samples\GBS_04R20_266135.csv</System.String>
     </DSCore.File.Filename>
     <DSCore.File.Directory type="DSCore.File.Directory" guid="a7b28ce1-c49e-469c-9512-6e1ccdb4b6d8" nickname="Directory Path" x="283.485497438277" y="191.038755267176" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
       <System.String>C:\Users\Mike\Desktop</System.String>
@@ -129,7 +129,7 @@ OUT = listoflists</Script>
     <DSCoreNodesUI.HigherOrder.ComposeFunctions type="DSCoreNodesUI.HigherOrder.ComposeFunctions" guid="d3fc59d7-3f2f-46df-9726-699ceb7ba966" nickname="Function.Compose" x="1005.88390126262" y="-225.590111855239" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="3" />
     <DSCore.Map type="DSCore.Map" guid="832bc166-5cf1-4d5d-8948-fb4315f0ad41" nickname="List.Map" x="1093.27046497857" y="204.506146472413" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
     <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="3085cc8e-bd4a-45f4-901f-634b49011c92" nickname="Code Block" x="-201.645173378249" y="-488.968675855081" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="150;" ShouldFocus="false" />
-    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="c53cda34-4c00-4972-81dd-a36675981f05" nickname="Watch" x="207.350470843188" y="441.121278031176" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="c53cda34-4c00-4972-81dd-a36675981f05" nickname="Watch" x="144.216404939518" y="444.444123605053" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
   </Elements>
   <Connectors>
     <Dynamo.Models.ConnectorModel start="4cdc3603-e657-4379-8611-8ab93cb2153b" start_index="0" end="d3fc59d7-3f2f-46df-9726-699ceb7ba966" end_index="1" portType="0" />
@@ -184,8 +184,8 @@ OUT = listoflists</Script>
     <Dynamo.Models.ConnectorModel start="c53cda34-4c00-4972-81dd-a36675981f05" start_index="0" end="832bc166-5cf1-4d5d-8948-fb4315f0ad41" end_index="0" portType="0" />
   </Connectors>
   <Notes>
-    <Dynamo.Models.NoteModel text="this will wrap a parameter and its values into a tuple.. we can make this a function and map it to ranges of values and their associated parameters..." x="-1247.25131031369" y="928.837772092749" />
-    <Dynamo.Models.NoteModel text="This Function updates the parameters before starting a rendering - mapping over the sequence below - FORMAT IS:&#xD;&#xA;[family instance, [param01,val][param02...,val]iteraton]" x="551.509037719089" y="-510.543866782237" />
-    <Dynamo.Models.NoteModel text="extract some data from render and save an image of the extracted bitmap.  We use python to get he sample folder to save the images in" x="500.347728788427" y="258.202486832968" />
+    <Dynamo.Models.NoteModel text="this will wrap a parameter and its values into a tuple.. we can make this a function and map it to ranges of values and their associated parameters..." x="-1896.65471937377" y="1013.89808965103" />
+    <Dynamo.Models.NoteModel text="This Function updates the parameters before starting a rendering - mapping over the sequence below - FORMAT IS:&#xD;&#xA;[family instance, [[param01,val][param02...,val]] iteraton]" x="551.509037719089" y="-510.543866782237" />
+    <Dynamo.Models.NoteModel text="extract some data from render and save an image of the extracted bitmap. " x="525.879854920532" y="234.088812152646" />
   </Notes>
 </Workspace>

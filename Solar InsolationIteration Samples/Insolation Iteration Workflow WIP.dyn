@@ -1,4 +1,4 @@
-<Workspace Version="0.7.2.28181" X="-271.006414753779" Y="-52.2130428880868" zoom="0.755349913334022" Description="" Category="" Name="Home">
+<Workspace Version="0.7.2.37747" X="-637.263704335682" Y="-106.152332545649" zoom="0.862615985033426" Description="" Category="" Name="Home">
   <Elements>
     <DSRevitNodesUI.FamilyTypes type="DSRevitNodesUI.FamilyTypes" guid="eb340086-d1c8-429a-bc49-a1822104dbc7" nickname="Family Types" x="-1530.84685143138" y="605.777674683481" isVisible="true" isUpstreamVisible="true" lacing="Disabled" index="7:BuildingMass_Loaded_5:SouthEast Plaza" />
     <DSCore.CartesianProduct type="DSCore.CartesianProduct" guid="c595773d-4510-4c8b-b99e-ab11d0026d7e" nickname="List.CartesianProduct" x="-402.612797793051" y="673.59790173873" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="3" />
@@ -31,7 +31,7 @@ OUT = listoflists</Script>
     <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="b9b73551-bd7b-47a6-99e4-c006b8202008" nickname="List.Flatten" x="-758.451004145535" y="856.645418515016" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.Flatten@var[]..[],int" />
     <DSCore.Map type="DSCore.Map" guid="3c37bf1a-9fc1-446d-9423-d7bffc955081" nickname="List.Map" x="772.789417086099" y="176.548127135186" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
     <DSCoreNodesUI.HigherOrder.ComposeFunctions type="DSCoreNodesUI.HigherOrder.ComposeFunctions" guid="c37f3c87-b370-4ff1-8863-e1f96866f591" nickname="Function.Compose" x="539.875954276477" y="0.479088771770705" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2" />
-    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="c483371a-223a-4c64-8757-81fa3c83e8a0" nickname="ComputeSolarinsolationFromSurfaces" x="236.158523308479" y="49.2655765109008" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="c483371a-223a-4c64-8757-81fa3c83e8a0" nickname="ComputeSolarinsolationFromSurfaces" x="208.336177773032" y="109.547325171036" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
       <ID value="3e90b3ba-4b6d-4cce-b775-553283fa60d9" />
       <Name value="ComputeSolarinsolationFromSurfaces" />
       <Description value="comuteSolarInsolationFromSurfacesAndShades" />
@@ -42,19 +42,10 @@ OUT = listoflists</Script>
         <Input value="iteration" />
       </Inputs>
       <Outputs>
-        <Output value="data,iteration" />
+        <Output value="data,iteration,locations" />
       </Outputs>
     </Dynamo.Nodes.Function>
-    <Dynamo.Nodes.DSModelElementSelection type="Dynamo.Nodes.DSModelElementSelection" guid="044c74fe-a69c-49c7-b6b3-832b6b3d39d2" nickname="Select Model Element" x="-242.853214103428" y="151.37591817596" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
-      <instance id="6333c70f-4d5d-437c-a3c3-9537586ecdbc-0000d1e7" />
-    </Dynamo.Nodes.DSModelElementSelection>
-    <Dynamo.Nodes.DSModelElementSelection type="Dynamo.Nodes.DSModelElementSelection" guid="9939abb9-125b-41d9-9178-da4c2408a86f" nickname="Select Model Element" x="-154.853253012575" y="-61.6245002387102" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
-      <instance id="5696343d-d9f6-4936-84e9-f2a7dd4467d2-0001063a" />
-    </Dynamo.Nodes.DSModelElementSelection>
-    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="4b44ca3e-f32c-4a22-b86f-583102b9f931" nickname="Element.Faces" x="41.3778565617252" y="-63.9094437799943" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="RevitNodes.dll" function="Revit.Elements.Element.Faces" />
-    <DSCore.File.Filename type="DSCore.File.Filename" guid="88e836d5-1b60-40d6-98a2-8b54960c9b92" nickname="File Path" x="-400.191281265721" y="34.1581546272441" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
-      <System.String>C:\Users\Mike\Desktop\Dynamo-Solar-Radiation\WeatherData\USA-NewYorkNewYork.wea</System.String>
-    </DSCore.File.Filename>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="4b44ca3e-f32c-4a22-b86f-583102b9f931" nickname="Element.Faces" x="45.347654420366" y="-89.0514968847198" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="RevitNodes.dll" function="Revit.Elements.Element.Faces" />
     <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="44deb536-9965-4052-9680-105d2098cd2a" nickname="SolarUpdateParameter(s)" x="278.22894442778" y="-85.6105509490689" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
       <ID value="63f335ce-d910-491d-8534-09608f9e1856" />
       <Name value="SolarUpdateParameter(s)" />
@@ -66,6 +57,17 @@ OUT = listoflists</Script>
         <Output value="iteration num" />
       </Outputs>
     </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.DSModelElementSelection type="Dynamo.Nodes.DSModelElementSelection" guid="0196d1c9-2566-4e55-bde4-7d4e5f28d5c6" nickname="Select Model Element" x="-179.418525101217" y="169.187461152914" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <instance id="6333c70f-4d5d-437c-a3c3-9537586ecdbc-0000d1e7" />
+    </Dynamo.Nodes.DSModelElementSelection>
+    <Dynamo.Nodes.DSModelElementSelection type="Dynamo.Nodes.DSModelElementSelection" guid="693d4b5b-31e8-41b0-b05a-5d4a73275f53" nickname="Select Model Element" x="-229.188007279416" y="-105.124236238328" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <instance id="5696343d-d9f6-4936-84e9-f2a7dd4467d2-0001063a" />
+    </Dynamo.Nodes.DSModelElementSelection>
+    <DSCore.File.Filename type="DSCore.File.Filename" guid="307a55bb-5ce8-46cc-b883-b9b37ca46bdf" nickname="File Path" x="-629.4764253198" y="43.6706569560675" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.String>C:\Users\Mike\AppData\Roaming\Dynamo\0.7\packages\Dynamo Solar Insolation\bin\WeatherData\USA-NewYorkNewYork.wea</System.String>
+    </DSCore.File.Filename>
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="6f6fca3b-fd86-4527-a9e2-76674bd8ee43" nickname="Code Block" x="1148.93407321268" y="273.496183259174" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="a[0][2];" ShouldFocus="false" />
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="cdd2d991-b10e-40fa-b47f-d898e567e0b9" nickname="Code Block" x="964.307772209031" y="362.759541852066" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="a[1][2];" ShouldFocus="false" />
   </Elements>
   <Connectors>
     <Dynamo.Models.ConnectorModel start="eb340086-d1c8-429a-bc49-a1822104dbc7" start_index="0" end="13072778-7f1e-4092-9eb5-0e7aa3354bbc" end_index="0" portType="0" />
@@ -85,13 +87,15 @@ OUT = listoflists</Script>
     <Dynamo.Models.ConnectorModel start="13072778-7f1e-4092-9eb5-0e7aa3354bbc" start_index="0" end="c595773d-4510-4c8b-b99e-ab11d0026d7e" end_index="1" portType="0" />
     <Dynamo.Models.ConnectorModel start="0519a155-693d-4f71-aa36-a8e220aae326" start_index="0" end="afec7d08-12d5-4f5f-8b4a-7285a0adb79d" end_index="1" portType="0" />
     <Dynamo.Models.ConnectorModel start="0519a155-693d-4f71-aa36-a8e220aae326" start_index="0" end="b9b73551-bd7b-47a6-99e4-c006b8202008" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3c37bf1a-9fc1-446d-9423-d7bffc955081" start_index="0" end="6f6fca3b-fd86-4527-a9e2-76674bd8ee43" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3c37bf1a-9fc1-446d-9423-d7bffc955081" start_index="0" end="cdd2d991-b10e-40fa-b47f-d898e567e0b9" end_index="0" portType="0" />
     <Dynamo.Models.ConnectorModel start="c37f3c87-b370-4ff1-8863-e1f96866f591" start_index="0" end="3c37bf1a-9fc1-446d-9423-d7bffc955081" end_index="1" portType="0" />
     <Dynamo.Models.ConnectorModel start="c483371a-223a-4c64-8757-81fa3c83e8a0" start_index="0" end="c37f3c87-b370-4ff1-8863-e1f96866f591" end_index="1" portType="0" />
-    <Dynamo.Models.ConnectorModel start="044c74fe-a69c-49c7-b6b3-832b6b3d39d2" start_index="0" end="c483371a-223a-4c64-8757-81fa3c83e8a0" end_index="2" portType="0" />
-    <Dynamo.Models.ConnectorModel start="9939abb9-125b-41d9-9178-da4c2408a86f" start_index="0" end="4b44ca3e-f32c-4a22-b86f-583102b9f931" end_index="0" portType="0" />
     <Dynamo.Models.ConnectorModel start="4b44ca3e-f32c-4a22-b86f-583102b9f931" start_index="0" end="c483371a-223a-4c64-8757-81fa3c83e8a0" end_index="0" portType="0" />
-    <Dynamo.Models.ConnectorModel start="88e836d5-1b60-40d6-98a2-8b54960c9b92" start_index="0" end="c483371a-223a-4c64-8757-81fa3c83e8a0" end_index="1" portType="0" />
     <Dynamo.Models.ConnectorModel start="44deb536-9965-4052-9680-105d2098cd2a" start_index="0" end="c37f3c87-b370-4ff1-8863-e1f96866f591" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="0196d1c9-2566-4e55-bde4-7d4e5f28d5c6" start_index="0" end="c483371a-223a-4c64-8757-81fa3c83e8a0" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="693d4b5b-31e8-41b0-b05a-5d4a73275f53" start_index="0" end="4b44ca3e-f32c-4a22-b86f-583102b9f931" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="307a55bb-5ce8-46cc-b883-b9b37ca46bdf" start_index="0" end="c483371a-223a-4c64-8757-81fa3c83e8a0" end_index="1" portType="0" />
   </Connectors>
   <Notes />
 </Workspace>
